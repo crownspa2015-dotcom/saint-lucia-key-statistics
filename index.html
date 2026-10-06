@@ -5,15 +5,21 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Saint Lucia — Key Statistics</title>
 <style>
-:root{--ink:#10245d;--muted:#60708c;--line:#dce6f0;--social:#eef6ff;--socialAccent:#2f7fd3;--economic:#fff6dd;--economicAccent:#c99a18;--env:#ecf8f5;--envAccent:#168f80}
+:root{
+  --ink:#10245d;--muted:#60708c;--line:#dce6f0;
+  --social:#eef6ff;--economic:#fff6dd;--env:#ecf8f5
+}
 *{box-sizing:border-box}
 html,body{margin:0;overflow-x:hidden}
 body{font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff}
 .wrap{max-width:1500px;margin:auto;padding:18px}
 .hero{margin-bottom:18px}
 .hero h1{font-size:42px;line-height:1.05;margin:0;color:#11225d}
+.hero-sub{margin-top:7px;font-size:13px;color:var(--muted);line-height:1.4}
 .section{padding:16px;border-radius:18px;margin:18px 0}
-.social{background:var(--social)} .economic{background:var(--economic)} .environment{background:var(--env)}
+.social{background:var(--social)}
+.economic{background:var(--economic)}
+.environment{background:var(--env)}
 .head{display:flex;gap:12px;align-items:center;margin-bottom:14px}
 .head-icon{font-size:27px;line-height:1}
 .head-line{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
@@ -23,19 +29,22 @@ body{font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff}
 .card,.chart{background:#fff;border:1px solid rgba(11,52,112,.09);border-radius:12px;padding:14px}
 .card{min-height:145px;display:flex;gap:12px}
 .icon{width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#e6f1fc;font-size:22px;flex:0 0 auto}
-.economic .icon{background:#fff0bd}.environment .icon{background:#dff4ef}
+.economic .icon{background:#fff0bd}
+.environment .icon{background:#dff4ef}
 .label{font-size:12.5px;font-weight:700;line-height:1.25}
 .value{font-size:28px;font-weight:800;margin:6px 0;line-height:1.05;color:#10245d}
 .sub{font-size:12px;color:var(--muted);line-height:1.35}
+.secondary{font-size:11.5px;color:#40546f;line-height:1.35;margin-top:5px}
 .source{font-size:10.5px;line-height:1.3;margin-top:9px}
-.source a{color:#416891;text-decoration:none}.source a:hover{text-decoration:underline}
+.source a{color:#416891;text-decoration:none}
+.source a:hover{text-decoration:underline}
 .visuals{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:10px}
 .visuals.single{grid-template-columns:minmax(0,1fr)}
 .chart{min-height:170px}
 .chart h3{margin:0 0 4px;font-size:19px;line-height:1.2}
 .chart-sub{font-size:12.5px;color:var(--muted);margin-bottom:12px;line-height:1.35}
 .bar-list{display:grid;gap:11px}
-.bar-row{display:grid;grid-template-columns:145px 1fr 110px;gap:10px;align-items:center;font-size:12px}
+.bar-row{display:grid;grid-template-columns:135px 1fr 110px;gap:10px;align-items:center;font-size:12px}
 .track{height:18px;background:#edf2f7;border-radius:9px;overflow:hidden}
 .fill{height:100%;border-radius:9px;background:linear-gradient(90deg,#c99a18,#e4c35a)}
 .environment .fill{background:linear-gradient(90deg,#168f80,#75cfc2)}
@@ -51,47 +60,116 @@ body{font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff}
 .sw{width:12px;height:12px;border-radius:3px}
 .legend-row strong{font-size:13px}
 .footer{font-size:12px;color:#65758e;padding:8px 3px 20px;text-align:right}
-@media(min-width:901px){.social .visuals.single .chart{max-width:calc(50% - 5px)}}
+@media(min-width:901px){
+  .social .visuals.single .chart{max-width:calc(50% - 5px)}
+  .environment .cards{grid-template-columns:minmax(0,1fr)}
+  .environment .cards .card{max-width:calc(50% - 5px)}
+}
 @media(max-width:1050px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:850px){.visuals{grid-template-columns:1fr}.donut-grid{grid-template-columns:1fr}.bar-row{grid-template-columns:110px 1fr 92px}.hero h1{font-size:34px}.social .visuals.single .chart{max-width:none}}
+@media(max-width:850px){
+  .visuals{grid-template-columns:1fr}
+  .donut-grid{grid-template-columns:1fr}
+  .bar-row{grid-template-columns:105px 1fr 92px}
+  .hero h1{font-size:34px}
+  .social .visuals.single .chart,.environment .cards .card{max-width:none}
+}
 @media(max-width:560px){.cards{grid-template-columns:1fr}.wrap{padding:12px}.section{padding:12px}}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <div class="hero"><h1>Saint Lucia — Key Statistics</h1></div>
+  <div class="hero">
+    <h1>Saint Lucia — Key Statistics</h1>
+    <div class="hero-sub">Population: 172,948 · 2022 Census</div>
+  </div>
+
   <section class="section social">
-    <div class="head"><div class="head-icon">👥</div><div class="head-line"><h2>SOCIAL</h2><div class="pillar-sub">— People, wellbeing and access to essential services</div></div></div>
-    <div class="cards">
-      <div class="card"><div class="icon">👥</div><div><div class="label">Population</div><div class="value">172,948</div><div class="sub">Resident population · 2022 Census</div><div class="source">Source: <a target="_blank" rel="noopener" href="https://stats.gov.lc/wp-content/uploads/2024/08/StLucia-Provisional-Census-Report-2022-Release-1Rev1.pdf">Central Statistical Office</a></div></div></div>
-      <div class="card"><div class="icon">🏠</div><div><div class="label">Poverty rate</div><div class="value">25.0%</div><div class="sub">Latest completed national poverty assessment · 2016</div><div class="source">Source: <a target="_blank" rel="noopener" href="https://stats.gov.lc/subjects/society/population/poverty-by-district-including-poverty-headcount-rate-2006-and-2016/">Central Statistical Office</a></div></div></div>
-      <div class="card"><div class="icon">💼</div><div><div class="label">Unemployment rate</div><div class="value">11%</div><div class="sub">Overall unemployment · 2025 · Youth unemployment 19%</div><div class="source">Source: <a target="_blank" rel="noopener" href="https://stats.gov.lc/">Central Statistical Office</a></div></div></div>
-      <div class="card"><div class="icon">⚡</div><div><div class="label">Households using electricity</div><div class="value">94.1%</div><div class="sub">Households using electricity for lighting/domestic purposes · 2022</div><div class="source">Source: <a target="_blank" rel="noopener" href="https://stats.gov.lc/wp-content/uploads/2024/08/StLucia-Provisional-Census-Report-2022-Release-1Rev1.pdf">Central Statistical Office</a></div></div></div>
+    <div class="head">
+      <div class="head-icon">👥</div>
+      <div class="head-line"><h2>SOCIAL</h2><div class="pillar-sub">— Living standards, opportunity and health</div></div>
     </div>
-    <div class="visuals single"><div class="chart"><h3>Deaths from non-communicable diseases</h3><div class="chart-sub">More than four in five deaths are attributed to NCDs</div><div class="donut-grid"><div class="donut social-donut"><div class="donut-center">&gt;80%</div></div><div class="legend"><div class="legend-row"><span class="sw" style="background:#2f7fd3"></span><span>NCDs</span><strong>&gt;80%</strong></div><div class="legend-row"><span class="sw" style="background:#dfe8ee"></span><span>Other causes</span><strong>&lt;20%</strong></div></div></div><div class="source">Source: <a target="_blank" rel="noopener" href="https://health.govt.lc/news/2025-health-summary-update">Ministry of Health — 2025 Health Summary Update</a></div></div></div>
+    <div class="cards">
+      <div class="card"><div class="icon">🏠</div><div><div class="label">Poverty rate</div><div class="value">25.0%</div><div class="sub">Latest completed national poverty estimate · 2016</div><div class="source">Source: <a target="_blank" rel="noopener" href="https://stats.gov.lc/subjects/society/population/poverty-by-district-including-poverty-headcount-rate-2006-and-2016/">Saint Lucia Central Statistical Office</a></div></div></div>
+      <div class="card"><div class="icon">💼</div><div><div class="label">Unemployment rate</div><div class="value">11%</div><div class="sub">Overall unemployment · 2025</div><div class="secondary">Youth unemployment: 20.0%</div><div class="source">Source: <a target="_blank" rel="noopener" href="https://stats.gov.lc/subjects/society/labour-force/main-labour-force-indicators-annual-1994-to-2025/">Saint Lucia Central Statistical Office</a></div></div></div>
+      <div class="card"><div class="icon">🫶</div><div><div class="label">Life expectancy</div><div class="value">70.2 / 77.8</div><div class="sub">Years · male / female · 2025</div><div class="source">Source: <a target="_blank" rel="noopener" href="https://health.govt.lc/news/2025-health-summary-update">Ministry of Health — 2025 Health Summary Update</a></div></div></div>
+    </div>
+    <div class="visuals single">
+      <div class="chart">
+        <h3>Deaths from non-communicable diseases</h3>
+        <div class="chart-sub">More than four in five deaths are attributed to NCDs</div>
+        <div class="donut-grid">
+          <div class="donut social-donut"><div class="donut-center">&gt;80%</div></div>
+          <div class="legend">
+            <div class="legend-row"><span class="sw" style="background:#2f7fd3"></span><span>NCDs</span><strong>&gt;80%</strong></div>
+            <div class="legend-row"><span class="sw" style="background:#dfe8ee"></span><span>Other causes</span><strong>&lt;20%</strong></div>
+          </div>
+        </div>
+        <div class="source">Source: <a target="_blank" rel="noopener" href="https://health.govt.lc/news/2025-health-summary-update">Ministry of Health — 2025 Health Summary Update</a></div>
+      </div>
+    </div>
   </section>
+
   <section class="section economic">
-    <div class="head"><div class="head-icon">📊</div><div class="head-line"><h2>ECONOMIC</h2><div class="pillar-sub">— Economic strength, external dependence and productive sectors</div></div></div>
-    <div class="cards">
-      <div class="card"><div class="icon">📉</div><div><div class="label">Real GDP growth</div><div class="value">−0.6%</div><div class="sub">Preliminary real GDP growth · 2025</div><div class="source">Source: <a target="_blank" rel="noopener" href="https://www.finance.gov.lc/resources/download/2256">Economic and Social Review 2025</a></div></div></div>
-      <div class="card"><div class="icon">✈️</div><div><div class="label">Accommodation &amp; food services</div><div class="value">20.9%</div><div class="sub">Share of GDP · 2025 · 1.15 million visitor arrivals</div><div class="source">Source: <a target="_blank" rel="noopener" href="https://www.finance.gov.lc/resources/download/2256">Economic and Social Review 2025</a></div></div></div>
-      <div class="card"><div class="icon">💳</div><div><div class="label">Public debt</div><div class="value">75.9%</div><div class="sub">Share of GDP at end-2025 · EC$5.44bn</div><div class="source">Source: <a target="_blank" rel="noopener" href="https://www.finance.gov.lc/resources/download/2256">Economic and Social Review 2025</a></div></div></div>
+    <div class="head">
+      <div class="head-icon">📊</div>
+      <div class="head-line"><h2>ECONOMIC</h2><div class="pillar-sub">— Investment conditions, external exposure and key sectors</div></div>
     </div>
-    <div class="visuals">
-      <div class="chart"><h3>Merchandise trade imbalance</h3><div class="chart-sub">Saint Lucia imports far more goods than it exports · 2025</div><div class="bar-list"><div class="bar-row"><span>Imports</span><div class="track"><div class="fill" style="width:100%"></div></div><span class="bar-value">EC$2.465bn</span></div><div class="bar-row"><span>Exports</span><div class="track"><div class="fill" style="width:9.9%"></div></div><span class="bar-value">EC$244m</span></div></div><div class="source">Source: <a target="_blank" rel="noopener" href="https://www.finance.gov.lc/resources/download/2256">Economic and Social Review 2025</a></div></div>
-      <div class="chart"><h3>Local food production</h3><div class="chart-sub">Domestic crop and fisheries output · 2025</div><div class="bar-list"><div class="bar-row"><span>Non-banana crops</span><div class="track"><div class="fill" style="width:100%"></div></div><span class="bar-value">3,499 t</span></div><div class="bar-row"><span>Fish landings</span><div class="track"><div class="fill" style="width:31.6%"></div></div><span class="bar-value">1,105 t</span></div></div><div class="source">Source: <a target="_blank" rel="noopener" href="https://www.finance.gov.lc/resources/download/2256">Economic and Social Review 2025</a></div></div>
+    <div class="cards">
+      <div class="card"><div class="icon">✈️</div><div><div class="label">Tourism sector</div><div class="value">20.9%</div><div class="sub">Accommodation &amp; food services share of GDP · 2025</div><div class="secondary">Visitor arrivals: about 1.15 million</div><div class="source">Source: <a target="_blank" rel="noopener" href="https://www.finance.gov.lc/resources/download/2256">Government of Saint Lucia — Economic and Social Review 2025</a></div></div></div>
+      <div class="card"><div class="icon">📈</div><div><div class="label">Inflation</div><div class="value">2.4%</div><div class="sub">Consumer price inflation · 2026 Q2</div><div class="source">Source: <a target="_blank" rel="noopener" href="https://stats.gov.lc/">Saint Lucia Central Statistical Office</a></div></div></div>
+      <div class="card"><div class="icon">💳</div><div><div class="label">Public debt</div><div class="value">75.9%</div><div class="sub">Share of GDP at end-2025</div><div class="secondary">Public debt stock: EC$5.44bn</div><div class="source">Source: <a target="_blank" rel="noopener" href="https://www.finance.gov.lc/resources/download/2256">Government of Saint Lucia — Economic and Social Review 2025</a></div></div></div>
+      <div class="card"><div class="icon">🌐</div><div><div class="label">Net foreign direct investment</div><div class="value">EC$506.2m</div><div class="sub">Net FDI inflows · 2024</div><div class="source">Source: <a target="_blank" rel="noopener" href="https://cdn.eccb-centralbank.org/documents/2026-02-05-08-48-43-AEFR-2025-St-Lucia--final.pdf">Eastern Caribbean Central Bank</a></div></div></div>
+    </div>
+    <div class="visuals single">
+      <div class="chart">
+        <h3>Merchandise trade imbalance</h3>
+        <div class="chart-sub">Goods imports greatly exceed exports · 2025 · trade deficit equivalent to 31% of GDP</div>
+        <div class="bar-list">
+          <div class="bar-row"><span>Imports</span><div class="track"><div class="fill" style="width:100%"></div></div><span class="bar-value">EC$2.465bn</span></div>
+          <div class="bar-row"><span>Exports</span><div class="track"><div class="fill" style="width:9.9%"></div></div><span class="bar-value">EC$244m</span></div>
+        </div>
+        <div class="source">Source: <a target="_blank" rel="noopener" href="https://www.finance.gov.lc/resources/download/2256">Government of Saint Lucia — Economic and Social Review 2025</a></div>
+      </div>
     </div>
   </section>
+
   <section class="section environment">
-    <div class="head"><div class="head-icon">🌿</div><div class="head-line"><h2>ENVIRONMENTAL</h2><div class="pillar-sub">— Climate exposure, natural resources and environmental resilience</div></div></div>
-    <div class="cards">
-      <div class="card"><div class="icon">💧</div><div><div class="label">Water consumption</div><div class="value">2.704bn gal</div><div class="sub">Metered and unmetered water consumption · 2025</div><div class="source">Source: <a target="_blank" rel="noopener" href="https://stats.gov.lc/subjects/sectors/environment/water-consumption-revenue-2025/">Central Statistical Office</a></div></div></div>
-      <div class="card"><div class="icon">🌳</div><div><div class="label">Forest cover</div><div class="value">~77%</div><div class="sub">Approximate share of national land area</div><div class="source">Source: <a target="_blank" rel="noopener" href="https://npc.govt.lc/files/documents/gazettes/2024/8/Gazette%20August%205%2C%202024.pdf">Government of Saint Lucia</a></div></div></div>
-      <div class="card"><div class="icon">🌀</div><div><div class="label">Hurricane Tomas impact</div><div class="value">~34% of GDP</div><div class="sub">Estimated total economic impact · 2010</div><div class="source">Source: <a target="_blank" rel="noopener" href="https://npc.govt.lc/files/documents/audit_reports/FINALREPORT2016.pdf">Government of Saint Lucia</a></div></div></div>
-      <div class="card"><div class="icon">🎯</div><div><div class="label">2035 emissions target</div><div class="value">−22%</div><div class="sub">Energy and transport emissions reduction target vs 2010 baseline</div><div class="source">Source: <a target="_blank" rel="noopener" href="https://www.govt.lc/news/saint-lucia-submits-ambitious-third-ndc-to-the-unfccc">Government of Saint Lucia — Third NDC</a></div></div></div>
+    <div class="head">
+      <div class="head-icon">🌿</div>
+      <div class="head-line"><h2>ENVIRONMENTAL</h2><div class="pillar-sub">— Energy dependence, water resilience and disaster exposure</div></div>
     </div>
-    <div class="visuals single"><div class="chart"><h3>Installed electricity capacity</h3><div class="chart-sub">Saint Lucia remains heavily dependent on fossil-fuel generation capacity</div><div class="donut-grid"><div class="donut env-donut"><div class="donut-center">95%</div></div><div class="legend"><div class="legend-row"><span class="sw" style="background:#dfe8ee"></span><span>Fossil fuel</span><strong>95%</strong></div><div class="legend-row"><span class="sw" style="background:#168f80"></span><span>Renewable</span><strong>5%</strong></div></div></div><div class="source">Source: <a target="_blank" rel="noopener" href="https://www.govt.lc/media.govt.lc/www/resources/publications/saint-lucia-blue-bond-framework-final-29nov0.pdf">Government of Saint Lucia — Blue Bond Framework</a></div></div></div>
+
+    <div class="cards">
+      <div class="card"><div class="icon">🌀</div><div><div class="label">Average disaster losses</div><div class="value">~2% of GDP</div><div class="sub">Average annual economic losses from extreme hydrometeorological events</div><div class="secondary">Hurricane Tomas alone caused losses equivalent to ~34% of GDP in 2010</div><div class="source">Sources: <a target="_blank" rel="noopener" href="https://www.finance.gov.lc/resources/download/2125">Government of Saint Lucia</a> · <a target="_blank" rel="noopener" href="https://npc.govt.lc/files/documents/audit_reports/FINALREPORT2017.pdf">Hurricane Tomas reference</a></div></div></div>
+    </div>
+
+    <div class="visuals">
+      <div class="chart">
+        <h3>Installed electricity capacity</h3>
+        <div class="chart-sub">Saint Lucia remains highly dependent on fossil-fuel generation capacity</div>
+        <div class="donut-grid">
+          <div class="donut env-donut"><div class="donut-center">95%</div></div>
+          <div class="legend">
+            <div class="legend-row"><span class="sw" style="background:#dfe8ee"></span><span>Fossil fuel</span><strong>95%</strong></div>
+            <div class="legend-row"><span class="sw" style="background:#168f80"></span><span>Renewable</span><strong>5%</strong></div>
+          </div>
+        </div>
+        <div class="secondary">Fossil-fuel imports were equivalent to 24.3% of GDP in 2023.</div>
+        <div class="source">Source: <a target="_blank" rel="noopener" href="https://www.govt.lc/media.govt.lc/www/resources/publications/saint-lucia-blue-bond-framework-final-29nov0.pdf">Government of Saint Lucia — Blue Bond Framework</a></div>
+      </div>
+
+      <div class="chart">
+        <h3>Non-revenue water</h3>
+        <div class="chart-sub">More than half of water produced is lost or unbilled in the distribution system</div>
+        <div class="bar-list">
+          <div class="bar-row"><span>Non-revenue</span><div class="track"><div class="fill" style="width:52%"></div></div><span class="bar-value">~52%</span></div>
+          <div class="bar-row"><span>Revenue water</span><div class="track"><div class="fill" style="width:48%"></div></div><span class="bar-value">~48%</span></div>
+        </div>
+        <div class="source">Source: <a target="_blank" rel="noopener" href="https://infrastructure.govt.lc/news/saint-lucia-secures-xcd-18-4-million-from-caricom-development-fund-to-upgrade-water-infrastructure">Ministry of Infrastructure</a></div>
+      </div>
+    </div>
   </section>
+
   <div class="footer">Updated 6 October 2026</div>
 </div>
 </body>
