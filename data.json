@@ -168,22 +168,23 @@
       },
       {
         "type": "bar",
-        "title": "Non-revenue water",
-        "subtitle": "More than half of water produced is lost or unbilled in the distribution system",
+        "title": "Dry-period water supply gap",
+        "subtitle": "Available water supply can fall well below average daily demand during dry periods",
         "items": [
           {
-            "label": "Non-revenue",
-            "value": 52,
-            "display": "~52%"
+            "label": "Water supply",
+            "value": 40000,
+            "display": "<40,000 m³/day"
           },
           {
-            "label": "Revenue water",
-            "value": 48,
-            "display": "~48%"
+            "label": "Average demand",
+            "value": 60000,
+            "display": "~60,000 m³/day"
           }
         ],
-        "source": "Saint Lucia Ministry of Infrastructure",
-        "sourceUrl": "https://infrastructure.govt.lc/news/saint-lucia-secures-xcd-18-4-million-from-caricom-development-fund-to-upgrade-water-infrastructure"
+        "secondary": "Dry-period supply can fall roughly one-third below average demand.",
+        "source": "Government of Saint Lucia — Blue Bond Framework",
+        "sourceUrl": "https://www.govt.lc/media.govt.lc/www/resources/publications/saint-lucia-blue-bond-framework-final-29nov0.pdf"
       }
     ]
   }
