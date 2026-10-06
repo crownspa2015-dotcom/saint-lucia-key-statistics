@@ -75,8 +75,7 @@ body{font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff}
 @media(min-width:901px){
   .social .visuals.single .chart{max-width:calc(50% - 5px)}
   .social .ncd-card{min-height:145px}
-  .environment .cards{grid-template-columns:minmax(0,1fr)}
-  .environment .cards .card{max-width:calc(50% - 5px)}
+  .environment .cards{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media(max-width:1050px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:850px){
@@ -84,7 +83,7 @@ body{font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff}
   .donut-grid{grid-template-columns:1fr}
   .bar-row{grid-template-columns:105px 1fr 92px}
   .hero h1{font-size:34px}
-  .social .visuals.single .chart,.environment .cards .card{max-width:none}
+  .social .visuals.single .chart{max-width:none}
 }
 @media(max-width:560px){.cards{grid-template-columns:1fr}.wrap{padding:12px}.section{padding:12px}}
 </style>
@@ -147,11 +146,12 @@ body{font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff}
   <section class="section environment">
     <div class="head">
       <div class="head-icon">🌿</div>
-      <div class="head-line"><h2>ENVIRONMENTAL</h2><div class="pillar-sub">— Energy dependence, water resilience and disaster exposure</div></div>
+      <div class="head-line"><h2>ENVIRONMENTAL</h2><div class="pillar-sub">— Energy dependence, water resilience, disaster exposure and protected ecosystems</div></div>
     </div>
 
     <div class="cards">
       <div class="card"><div class="icon">🌀</div><div><div class="label">Average disaster losses</div><div class="value">~2% of GDP</div><div class="sub">Average annual economic losses from extreme hydrometeorological events</div><div class="secondary">Hurricane Tomas alone caused losses equivalent to ~34% of GDP in 2010</div><div class="source">Sources: <a target="_blank" rel="noopener" href="https://www.finance.gov.lc/resources/download/2125">Government of Saint Lucia</a> · <a target="_blank" rel="noopener" href="https://npc.govt.lc/files/documents/audit_reports/FINALREPORT2017.pdf">Hurricane Tomas reference</a></div></div></div>
+      <div class="card"><div class="icon">🌳</div><div><div class="label">Protected forests</div><div class="value">~15%</div><div class="sub">Share of Saint Lucia's land mass covered by Forest Reserves and Protected Forests</div><div class="secondary">12 Forest Reserves · 24 Protected Forests</div><div class="source">Source: <a target="_blank" rel="noopener" href="https://www.govt.lc/consultancies/consulting-opportunity--south-east-coast-projects-gis-and-genode-development-and-training">Government of Saint Lucia</a></div></div></div>
     </div>
 
     <div class="visuals">
