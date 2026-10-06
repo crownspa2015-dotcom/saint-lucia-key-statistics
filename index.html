@@ -59,9 +59,22 @@ body{font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff}
 .legend-row{display:grid;grid-template-columns:12px 1fr auto;gap:8px;align-items:center;font-size:12px}
 .sw{width:12px;height:12px;border-radius:3px}
 .legend-row strong{font-size:13px}
+.ncd-card{display:block;padding:14px}
+.ncd-card h3{margin:0 0 4px;font-size:12.5px;line-height:1.25}
+.ncd-card .chart-sub{font-size:11.5px;margin-bottom:8px}
+.ncd-mini{display:grid;grid-template-columns:82px 1fr;gap:10px;align-items:center}
+.ncd-card .donut{width:78px;height:78px}
+.ncd-card .donut:after{inset:18px}
+.ncd-card .donut-center{font-size:17px}
+.ncd-card .legend{gap:5px}
+.ncd-card .legend-row{font-size:10.5px;grid-template-columns:10px 1fr auto;gap:6px}
+.ncd-card .sw{width:10px;height:10px}
+.ncd-card .legend-row strong{font-size:10.5px}
+.ncd-card .source{font-size:9.5px;margin-top:7px}
 .footer{font-size:12px;color:#65758e;padding:8px 3px 20px;text-align:right}
 @media(min-width:901px){
   .social .visuals.single .chart{max-width:calc(50% - 5px)}
+  .social .ncd-card{min-height:145px}
   .environment .cards{grid-template-columns:minmax(0,1fr)}
   .environment .cards .card{max-width:calc(50% - 5px)}
 }
@@ -92,12 +105,10 @@ body{font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff}
       <div class="card"><div class="icon">🏠</div><div><div class="label">Poverty rate</div><div class="value">25.0%</div><div class="sub">Latest completed national poverty estimate · 2016</div><div class="source">Source: <a target="_blank" rel="noopener" href="https://stats.gov.lc/subjects/society/population/poverty-by-district-including-poverty-headcount-rate-2006-and-2016/">Saint Lucia Central Statistical Office</a></div></div></div>
       <div class="card"><div class="icon">💼</div><div><div class="label">Unemployment rate</div><div class="value">11%</div><div class="sub">Overall unemployment · 2025</div><div class="secondary">Youth unemployment: 20.0%</div><div class="source">Source: <a target="_blank" rel="noopener" href="https://stats.gov.lc/subjects/society/labour-force/main-labour-force-indicators-annual-1994-to-2025/">Saint Lucia Central Statistical Office</a></div></div></div>
       <div class="card"><div class="icon">🫶</div><div><div class="label">Life expectancy</div><div class="value">70.2 / 77.8</div><div class="sub">Years · male / female · 2025</div><div class="source">Source: <a target="_blank" rel="noopener" href="https://health.govt.lc/news/2025-health-summary-update">Ministry of Health — 2025 Health Summary Update</a></div></div></div>
-    </div>
-    <div class="visuals single">
-      <div class="chart">
+      <div class="chart ncd-card">
         <h3>Deaths from non-communicable diseases</h3>
         <div class="chart-sub">More than four in five deaths are attributed to NCDs</div>
-        <div class="donut-grid">
+        <div class="ncd-mini">
           <div class="donut social-donut"><div class="donut-center">&gt;80%</div></div>
           <div class="legend">
             <div class="legend-row"><span class="sw" style="background:#2f7fd3"></span><span>NCDs</span><strong>&gt;80%</strong></div>
