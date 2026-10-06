@@ -3,7 +3,7 @@
     "title": "Saint Lucia — Key Statistics",
     "subtitle": "A concise view of Saint Lucia's social conditions, investment environment and environmental resilience.",
     "lastUpdated": "6 October 2026",
-    "indicatorThemes": 12,
+    "indicatorThemes": 13,
     "context": {
       "population": "172,948",
       "period": "2022 Census"
@@ -45,8 +45,16 @@
         "title": "Deaths from non-communicable diseases",
         "subtitle": "More than four in five deaths are attributed to NCDs",
         "segments": [
-          {"label": "NCDs", "value": 80, "display": ">80%"},
-          {"label": "Other causes", "value": 20, "display": "<20%"}
+          {
+            "label": "NCDs",
+            "value": 80,
+            "display": ">80%"
+          },
+          {
+            "label": "Other causes",
+            "value": 20,
+            "display": "<20%"
+          }
         ],
         "source": "Saint Lucia Ministry of Health — 2025 Health Summary Update",
         "sourceUrl": "https://health.govt.lc/news/2025-health-summary-update"
@@ -98,8 +106,16 @@
         "title": "Merchandise trade imbalance",
         "subtitle": "Goods imports greatly exceed exports · 2025 · trade deficit equivalent to 31% of GDP",
         "items": [
-          {"label": "Imports", "value": 2.4645, "display": "EC$2.465bn"},
-          {"label": "Exports", "value": 0.2443, "display": "EC$244m"}
+          {
+            "label": "Imports",
+            "value": 2.4645,
+            "display": "EC$2.465bn"
+          },
+          {
+            "label": "Exports",
+            "value": 0.2443,
+            "display": "EC$244m"
+          }
         ],
         "source": "Government of Saint Lucia — Economic and Social Review 2025",
         "sourceUrl": "https://www.finance.gov.lc/resources/download/2256"
@@ -108,7 +124,7 @@
   },
   "environment": {
     "title": "ENVIRONMENTAL",
-    "strap": "Energy dependence, water resilience and disaster exposure",
+    "strap": "Energy dependence, water resilience, disaster exposure and protected ecosystems",
     "cards": [
       {
         "label": "Average disaster losses",
@@ -118,6 +134,15 @@
         "icon": "🌀",
         "source": "Government of Saint Lucia",
         "sourceUrl": "https://www.finance.gov.lc/resources/download/2125"
+      },
+      {
+        "label": "Protected forests",
+        "value": "~15%",
+        "subtitle": "Share of Saint Lucia's land mass covered by Forest Reserves and Protected Forests",
+        "secondary": "12 Forest Reserves · 24 Protected Forests",
+        "icon": "🌳",
+        "source": "Government of Saint Lucia",
+        "sourceUrl": "https://www.govt.lc/consultancies/consulting-opportunity--south-east-coast-projects-gis-and-genode-development-and-training"
       }
     ],
     "charts": [
@@ -126,8 +151,16 @@
         "title": "Installed electricity capacity",
         "subtitle": "Saint Lucia remains highly dependent on fossil-fuel generation capacity",
         "segments": [
-          {"label": "Fossil fuel", "value": 95, "display": "95%"},
-          {"label": "Renewable", "value": 5, "display": "5%"}
+          {
+            "label": "Fossil fuel",
+            "value": 95,
+            "display": "95%"
+          },
+          {
+            "label": "Renewable",
+            "value": 5,
+            "display": "5%"
+          }
         ],
         "secondary": "Fossil-fuel imports were equivalent to 24.3% of GDP in 2023.",
         "source": "Government of Saint Lucia — Blue Bond Framework",
@@ -138,8 +171,16 @@
         "title": "Non-revenue water",
         "subtitle": "More than half of water produced is lost or unbilled in the distribution system",
         "items": [
-          {"label": "Non-revenue", "value": 52, "display": "~52%"},
-          {"label": "Revenue water", "value": 48, "display": "~48%"}
+          {
+            "label": "Non-revenue",
+            "value": 52,
+            "display": "~52%"
+          },
+          {
+            "label": "Revenue water",
+            "value": 48,
+            "display": "~48%"
+          }
         ],
         "source": "Saint Lucia Ministry of Infrastructure",
         "sourceUrl": "https://infrastructure.govt.lc/news/saint-lucia-secures-xcd-18-4-million-from-caricom-development-fund-to-upgrade-water-infrastructure"
