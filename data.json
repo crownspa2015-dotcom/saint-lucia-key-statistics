@@ -1,43 +1,149 @@
 {
   "meta": {
     "title": "Saint Lucia — Key Statistics",
-    "subtitle": "A concise view of Saint Lucia's social conditions, economic structure and environmental resilience.",
+    "subtitle": "A concise view of Saint Lucia's social conditions, investment environment and environmental resilience.",
     "lastUpdated": "6 October 2026",
-    "indicatorThemes": 15
+    "indicatorThemes": 12,
+    "context": {
+      "population": "172,948",
+      "period": "2022 Census"
+    }
   },
   "social": {
     "title": "SOCIAL",
-    "strap": "People, wellbeing and access to essential services",
+    "strap": "Living standards, opportunity and health",
     "cards": [
-      {"label":"Population","value":"172,948","subtitle":"Resident population · 2022 Census","icon":"👥","source":"Saint Lucia Central Statistical Office — 2022 Population and Housing Census","sourceUrl":"https://stats.gov.lc/wp-content/uploads/2024/08/StLucia-Provisional-Census-Report-2022-Release-1Rev1.pdf"},
-      {"label":"Poverty rate","value":"25.0%","subtitle":"Latest completed national poverty assessment · 2016","icon":"🏠","source":"Saint Lucia Central Statistical Office — Poverty by District","sourceUrl":"https://stats.gov.lc/subjects/society/population/poverty-by-district-including-poverty-headcount-rate-2006-and-2016/"},
-      {"label":"Unemployment rate","value":"11%","subtitle":"Overall unemployment · 2025 · Youth unemployment 19%","icon":"💼","source":"Saint Lucia Central Statistical Office","sourceUrl":"https://stats.gov.lc/"},
-      {"label":"Households using electricity","value":"94.1%","subtitle":"Households using electricity for lighting/domestic purposes · 2022","icon":"⚡","source":"Saint Lucia Central Statistical Office — 2022 Population and Housing Census","sourceUrl":"https://stats.gov.lc/wp-content/uploads/2024/08/StLucia-Provisional-Census-Report-2022-Release-1Rev1.pdf"}
+      {
+        "label": "Poverty rate",
+        "value": "25.0%",
+        "subtitle": "Latest completed national poverty estimate · 2016",
+        "icon": "🏠",
+        "source": "Saint Lucia Central Statistical Office — Poverty by District",
+        "sourceUrl": "https://stats.gov.lc/subjects/society/population/poverty-by-district-including-poverty-headcount-rate-2006-and-2016/"
+      },
+      {
+        "label": "Unemployment rate",
+        "value": "11%",
+        "subtitle": "Overall unemployment · 2025",
+        "secondary": "Youth unemployment: 20.0%",
+        "icon": "💼",
+        "source": "Saint Lucia Central Statistical Office — Main Labour Force Indicators",
+        "sourceUrl": "https://stats.gov.lc/subjects/society/labour-force/main-labour-force-indicators-annual-1994-to-2025/"
+      },
+      {
+        "label": "Life expectancy",
+        "value": "70.2 / 77.8",
+        "subtitle": "Years · male / female · 2025",
+        "icon": "🫶",
+        "source": "Saint Lucia Ministry of Health — 2025 Health Summary Update",
+        "sourceUrl": "https://health.govt.lc/news/2025-health-summary-update"
+      }
     ],
-    "charts": [{"type":"donut","title":"Deaths from non-communicable diseases","subtitle":"More than four in five deaths are attributed to NCDs","segments":[{"label":"NCDs","value":80,"display":">80%"},{"label":"Other causes","value":20,"display":"<20%"}],"source":"Saint Lucia Ministry of Health — 2025 Health Summary Update","sourceUrl":"https://health.govt.lc/news/2025-health-summary-update"}]
+    "charts": [
+      {
+        "type": "donut",
+        "title": "Deaths from non-communicable diseases",
+        "subtitle": "More than four in five deaths are attributed to NCDs",
+        "segments": [
+          {"label": "NCDs", "value": 80, "display": ">80%"},
+          {"label": "Other causes", "value": 20, "display": "<20%"}
+        ],
+        "source": "Saint Lucia Ministry of Health — 2025 Health Summary Update",
+        "sourceUrl": "https://health.govt.lc/news/2025-health-summary-update"
+      }
+    ]
   },
   "economic": {
-    "title":"ECONOMIC",
-    "strap":"Economic strength, external dependence and productive sectors",
-    "cards":[
-      {"label":"Real GDP growth","value":"−0.6%","subtitle":"Preliminary real GDP growth · 2025","icon":"📉","source":"Government of Saint Lucia — Economic and Social Review 2025","sourceUrl":"https://www.finance.gov.lc/resources/download/2256"},
-      {"label":"Accommodation & food services","value":"20.9%","subtitle":"Share of GDP · 2025 · 1.15 million visitor arrivals","icon":"✈️","source":"Government of Saint Lucia — Economic and Social Review 2025","sourceUrl":"https://www.finance.gov.lc/resources/download/2256"},
-      {"label":"Public debt","value":"75.9%","subtitle":"Share of GDP at end-2025 · EC$5.44bn","icon":"💳","source":"Government of Saint Lucia — Economic and Social Review 2025","sourceUrl":"https://www.finance.gov.lc/resources/download/2256"}
+    "title": "ECONOMIC",
+    "strap": "Investment conditions, external exposure and key sectors",
+    "cards": [
+      {
+        "label": "Tourism sector",
+        "value": "20.9%",
+        "subtitle": "Accommodation & food services share of GDP · 2025",
+        "secondary": "Visitor arrivals: about 1.15 million",
+        "icon": "✈️",
+        "source": "Government of Saint Lucia — Economic and Social Review 2025",
+        "sourceUrl": "https://www.finance.gov.lc/resources/download/2256"
+      },
+      {
+        "label": "Inflation",
+        "value": "2.4%",
+        "subtitle": "Consumer price inflation · 2026 Q2",
+        "icon": "📈",
+        "source": "Saint Lucia Central Statistical Office",
+        "sourceUrl": "https://stats.gov.lc/"
+      },
+      {
+        "label": "Public debt",
+        "value": "75.9%",
+        "subtitle": "Share of GDP at end-2025",
+        "secondary": "Public debt stock: EC$5.44bn",
+        "icon": "💳",
+        "source": "Government of Saint Lucia — Economic and Social Review 2025",
+        "sourceUrl": "https://www.finance.gov.lc/resources/download/2256"
+      },
+      {
+        "label": "Net foreign direct investment",
+        "value": "EC$506.2m",
+        "subtitle": "Net FDI inflows · 2024",
+        "icon": "🌐",
+        "source": "Eastern Caribbean Central Bank",
+        "sourceUrl": "https://cdn.eccb-centralbank.org/documents/2026-02-05-08-48-43-AEFR-2025-St-Lucia--final.pdf"
+      }
     ],
-    "charts":[
-      {"type":"bar","title":"Merchandise trade imbalance","subtitle":"Saint Lucia imports far more goods than it exports · 2025","items":[{"label":"Imports","value":2.4645,"display":"EC$2.465bn"},{"label":"Exports","value":0.2443,"display":"EC$244m"}],"source":"Government of Saint Lucia — Economic and Social Review 2025","sourceUrl":"https://www.finance.gov.lc/resources/download/2256"},
-      {"type":"bar","title":"Local food production","subtitle":"Domestic crop and fisheries output · 2025","items":[{"label":"Non-banana crops","value":3498.9,"display":"3,499 t"},{"label":"Fish landings","value":1104.9,"display":"1,105 t"}],"source":"Government of Saint Lucia — Economic and Social Review 2025","sourceUrl":"https://www.finance.gov.lc/resources/download/2256"}
+    "charts": [
+      {
+        "type": "bar",
+        "title": "Merchandise trade imbalance",
+        "subtitle": "Goods imports greatly exceed exports · 2025 · trade deficit equivalent to 31% of GDP",
+        "items": [
+          {"label": "Imports", "value": 2.4645, "display": "EC$2.465bn"},
+          {"label": "Exports", "value": 0.2443, "display": "EC$244m"}
+        ],
+        "source": "Government of Saint Lucia — Economic and Social Review 2025",
+        "sourceUrl": "https://www.finance.gov.lc/resources/download/2256"
+      }
     ]
   },
   "environment": {
-    "title":"ENVIRONMENTAL",
-    "strap":"Climate exposure, natural resources and environmental resilience",
-    "cards":[
-      {"label":"Water consumption","value":"2.704bn gal","subtitle":"Metered and unmetered water consumption · 2025","icon":"💧","source":"Saint Lucia Central Statistical Office — Water Consumption and Revenue 2025","sourceUrl":"https://stats.gov.lc/subjects/sectors/environment/water-consumption-revenue-2025/"},
-      {"label":"Forest cover","value":"~77%","subtitle":"Approximate share of national land area","icon":"🌳","source":"Government of Saint Lucia — Official Gazette","sourceUrl":"https://npc.govt.lc/files/documents/gazettes/2024/8/Gazette%20August%205%2C%202024.pdf"},
-      {"label":"Hurricane Tomas impact","value":"~34% of GDP","subtitle":"Estimated total economic impact · 2010","icon":"🌀","source":"Government of Saint Lucia — official disaster assessment reference","sourceUrl":"https://npc.govt.lc/files/documents/audit_reports/FINALREPORT2016.pdf"},
-      {"label":"2035 emissions target","value":"−22%","subtitle":"Energy and transport emissions reduction target vs 2010 baseline","icon":"🎯","source":"Government of Saint Lucia — Third Nationally Determined Contribution","sourceUrl":"https://www.govt.lc/news/saint-lucia-submits-ambitious-third-ndc-to-the-unfccc"}
+    "title": "ENVIRONMENTAL",
+    "strap": "Energy dependence, water resilience and disaster exposure",
+    "cards": [
+      {
+        "label": "Average disaster losses",
+        "value": "~2% of GDP",
+        "subtitle": "Average annual economic losses from extreme hydrometeorological events",
+        "secondary": "Hurricane Tomas caused losses equivalent to ~34% of GDP in 2010",
+        "icon": "🌀",
+        "source": "Government of Saint Lucia",
+        "sourceUrl": "https://www.finance.gov.lc/resources/download/2125"
+      }
     ],
-    "charts":[{"type":"donut","title":"Installed electricity capacity","subtitle":"Saint Lucia remains heavily dependent on fossil-fuel generation capacity","segments":[{"label":"Fossil fuel","value":95,"display":"95%"},{"label":"Renewable","value":5,"display":"5%"}],"source":"Government of Saint Lucia — Blue Bond Framework","sourceUrl":"https://www.govt.lc/media.govt.lc/www/resources/publications/saint-lucia-blue-bond-framework-final-29nov0.pdf"}]
+    "charts": [
+      {
+        "type": "donut",
+        "title": "Installed electricity capacity",
+        "subtitle": "Saint Lucia remains highly dependent on fossil-fuel generation capacity",
+        "segments": [
+          {"label": "Fossil fuel", "value": 95, "display": "95%"},
+          {"label": "Renewable", "value": 5, "display": "5%"}
+        ],
+        "secondary": "Fossil-fuel imports were equivalent to 24.3% of GDP in 2023.",
+        "source": "Government of Saint Lucia — Blue Bond Framework",
+        "sourceUrl": "https://www.govt.lc/media.govt.lc/www/resources/publications/saint-lucia-blue-bond-framework-final-29nov0.pdf"
+      },
+      {
+        "type": "bar",
+        "title": "Non-revenue water",
+        "subtitle": "More than half of water produced is lost or unbilled in the distribution system",
+        "items": [
+          {"label": "Non-revenue", "value": 52, "display": "~52%"},
+          {"label": "Revenue water", "value": 48, "display": "~48%"}
+        ],
+        "source": "Saint Lucia Ministry of Infrastructure",
+        "sourceUrl": "https://infrastructure.govt.lc/news/saint-lucia-secures-xcd-18-4-million-from-caricom-development-fund-to-upgrade-water-infrastructure"
+      }
+    ]
   }
 }
